@@ -1,0 +1,23 @@
+from enum import StrEnum
+
+
+class EstadoEquipo(StrEnum):
+    OPERATIVO = "OPERATIVO"
+    EN_MANTENIMIENTO = "EN_MANTENIMIENTO"
+    INOPERATIVO = "INOPERATIVO"
+    DADO_DE_BAJA = "DADO_DE_BAJA"
+
+
+class EstadoComponente(StrEnum):
+    INSTALADO = "INSTALADO"
+    EN_STOCK = "EN_STOCK"
+    DEFECTUOSO = "DEFECTUOSO"
+    DADO_DE_BAJA = "DADO_DE_BAJA"
+
+
+class TipoMovimiento(StrEnum):
+    ASIGNACION = "ASIGNACION"
+    EXTRACCION = "EXTRACCION"
+    TRASLADO = "TRASLADO"
+    REEMPLAZO = "REEMPLAZO"
+
